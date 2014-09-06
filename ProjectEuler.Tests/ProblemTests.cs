@@ -9,14 +9,14 @@ namespace ProjectEuler.Tests
         [TestCase(1000, 233168)]
         public void Multiplesof3And5(int num, int ans)
         {
-            int answer = Problems.Multiplesof3And5(num);
+            int answer = BruteForceProblems.Multiplesof3And5(num);
             Assert.AreEqual(ans, answer);
         }
 
         [TestCase(4000000, 4613732)]
         public void EvenFibonacciNumbers(int num, int ans)
         {
-            var answer = Problems.Fibanacci(Helper.IsEven, num);
+            var answer = BruteForceProblems.Fibanacci(Shared.IsEven, num);
             Assert.AreEqual(ans, answer);
         }
 
@@ -25,7 +25,7 @@ namespace ProjectEuler.Tests
         [Ignore("Too slow to finish")]
         public void LargestPrimeFactor(ulong num, long ans)
         {
-            var answer = Problems.LargestPrimeFactor(Helper.DotNetPerlsIsPrime, num);
+            var answer = BruteForceProblems.LargestPrimeFactor(Shared.DotNetPerlsIsPrime, num);
             Assert.AreEqual(ans, answer);
         }
 
@@ -34,7 +34,7 @@ namespace ProjectEuler.Tests
         [Category("Slow Running")]
         public void PacoLargestPrimeFactor(long num, long ans)
         {
-            var answer = Problems.PacoLargestPrimeFactor(Helper.IsInteger, Helper.IsPrime, num);
+            var answer = BruteForceProblems.PacoLargestPrimeFactor(Shared.IsInteger, Shared.IsPrime, num);
             Assert.AreEqual(ans, answer);
         }
 
@@ -42,34 +42,34 @@ namespace ProjectEuler.Tests
         [TestCase(9009, 99)]
         public void Problem4(int ans, int digits)
         {
-            var answer = Problems.LargestPalindromeFromProductOfTwoDigitNumbers(Helper.IsPalindromeToString, digits);
+            var answer = BruteForceProblems.LargestPalindromeFromProductOfTwoDigitNumbers(Shared.IsPalindromeToString, digits);
             Assert.AreEqual(ans, answer);
         }
 
         [Test]
         public void SmallestMultipleExample()
         {
-            Assert.DoesNotThrow(() => Problems.SmallestMultipleExample(Helper.IsInteger));
+            Assert.DoesNotThrow(() => BruteForceProblems.SmallestMultipleExample(Shared.IsInteger));
         }
 
         [TestCase(232792560)]
         public void SmallestMultiple(int ans)
         {
-            var answer = Problems.SmallestMultiple(Helper.IsInteger);
+            var answer = BruteForceProblems.SmallestMultiple(Shared.IsInteger);
             Assert.AreEqual(ans, answer);
         }
 
         [TestCase(385)]
         public void SumSquareNaturalNumbersExample(int ans)
         {
-            var answer = Problems.SumSquareNaturalNumbersExample();
+            var answer = BruteForceProblems.SumSquareNaturalNumbersExample();
             Assert.AreEqual(ans, answer);
         }
 
         [TestCase(3025)]
         public void SquareSumNaturalNumbersExample(int ans)
         {
-            var answer = Problems.SquareSumNaturalNumbersExample();
+            var answer = BruteForceProblems.SquareSumNaturalNumbersExample();
             Assert.AreEqual(ans, answer);
         }
 
@@ -78,7 +78,7 @@ namespace ProjectEuler.Tests
         public void DifferenceSquareSumNaturalNumbersExample(int ans, int size)
         {
             // Note: This one was very easy
-            var answer = Problems.SquareSumDifference(size);
+            var answer = BruteForceProblems.SquareSumDifference(size);
             Assert.AreEqual(ans, answer);
         }
 
@@ -86,7 +86,7 @@ namespace ProjectEuler.Tests
         [TestCase(104743, (ulong)10001)]
         public void NthPrime(int ans, ulong nth)
         {
-            var answer = Problems.NthPrime(Helper.DotNetPerlsIsPrime, nth);
+            var answer = BruteForceProblems.NthPrime(Shared.DotNetPerlsIsPrime, nth);
             Assert.AreEqual(ans, answer);
         }
 
@@ -94,14 +94,14 @@ namespace ProjectEuler.Tests
         [TestCase((ulong)23514624000, 13)]
         public void LargestProductInASeries(ulong ans, int nth)
         {
-            var answer = Problems.LargestProductInASeries(nth);
+            var answer = BruteForceProblems.LargestProductInASeries(nth);
             Assert.AreEqual(ans, answer);
         }
 
         [TestCase(1000, 31875000)]
         public void SpecialPythagoreanTriplet(int c, int ans)
         {
-            var answer = Problems.SpecialPythagoreanTriplet(c);
+            var answer = BruteForceProblems.SpecialPythagoreanTriplet(c);
             Assert.AreEqual(ans, answer);
         }
 
@@ -110,7 +110,7 @@ namespace ProjectEuler.Tests
         [Category("Long Running")]
         public void SummationOfPrimes(ulong ans, ulong num)
         {
-            var answer = Problems.SummationOfPrimesBelow(num, Helper.DotNetPerlsIsPrime);
+            var answer = BruteForceProblems.SummationOfPrimesBelow(num, Shared.DotNetPerlsIsPrime);
             Assert.AreEqual(ans, answer);
         }
     }

@@ -5,7 +5,10 @@ using System.Linq;
 
 namespace ProjectEuler
 {
-    public static class Problems
+    /// <summary>
+    /// Naive functions involved in solving problems initially.
+    /// </summary>
+    public static class BruteForceProblems
     {
         public static int Multiplesof3And5(int num)
         {

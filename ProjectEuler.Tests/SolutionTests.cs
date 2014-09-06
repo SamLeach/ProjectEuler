@@ -82,7 +82,17 @@ namespace ProjectEuler.Tests
         {
             // call base setup explicitly
             base.SetUp();
-            solutions = new NaiveSolutions();
+            solutions = this.Create();
+        }
+
+        /// <summary>
+        /// Override to provide the ISolutions implementation
+        /// </summary>
+        /// <returns>The ISolutions implementation</returns>
+        public virtual ISolutions Create()
+        {
+            // Default to the fastest implementation :)
+            return new ProjectEulerSolutions();
         }
     }
 }

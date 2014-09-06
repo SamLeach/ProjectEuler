@@ -42,10 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BruteForceTests.cs" />
     <Compile Include="HelperTests.cs" />
+    <Compile Include="LinqTests.cs" />
+    <Compile Include="OptimisedTests.cs" />
     <Compile Include="ProblemTests.cs" />
+    <Compile Include="ProjectEulerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolutionFactory.cs" />
     <Compile Include="SolutionTests.cs" />
+    <Compile Include="SolutionType.cs" />
     <Compile Include="TestTimer.cs" />
   </ItemGroup>
   <ItemGroup>

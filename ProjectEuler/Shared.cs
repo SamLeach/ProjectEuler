@@ -3,7 +3,10 @@ using System.Globalization;
 
 namespace ProjectEuler
 {
-    public static class Helper
+    /// <summary>
+    /// Shared functions that help solve problems
+    /// </summary>
+    public static class Shared
     {
         public static bool IsEven(int n)
         {

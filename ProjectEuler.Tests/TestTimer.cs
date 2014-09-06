@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace ProjectEuler.Tests
 {
+    [TestFixture]
     public abstract class TestTimer
     {
         private Stopwatch sw; 

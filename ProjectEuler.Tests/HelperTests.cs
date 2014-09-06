@@ -14,7 +14,7 @@ namespace ProjectEuler.Tests
         [TestCase((ulong)998, false)]
         public void IsPrime(ulong num, bool ans)
         {
-            var answer = Helper.IsPrime(num);
+            var answer = Shared.IsPrime(num);
             Assert.AreEqual(ans, answer);
         }
 
@@ -27,7 +27,7 @@ namespace ProjectEuler.Tests
         [TestCase((ulong)998, false)]
         public void IsPrimeDotNetPearls(ulong num, bool ans)
         {
-            var answer = Helper.DotNetPerlsIsPrime(num);
+            var answer = Shared.DotNetPerlsIsPrime(num);
             Assert.AreEqual(ans, answer);
         }
 
@@ -35,7 +35,7 @@ namespace ProjectEuler.Tests
         [TestCase(9010, false)]
         public void IsPalindrome(long num, bool ans)
         {
-            var answer = Helper.IsPalindromeToString(num);
+            var answer = Shared.IsPalindromeToString(num);
             Assert.AreEqual(ans, answer);
         }
     }

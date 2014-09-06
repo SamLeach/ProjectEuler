@@ -1,5 +1,8 @@
 ﻿namespace ProjectEuler
 {
+    /// <summary>
+    /// Solutions
+    /// </summary>
     public interface ISolutions
     {
         int     Problem1(int n);
