@@ -1,7 +1,15 @@
-ProjectEuler
-============
+Project Euler Solutions
+=======================
 
-Project Euler C# Solutions
+This project attempts to document the algorithm discovery and optimisation phases carried out while solving Project Euler mathematical problems programmatically. Its purpose is not to document the best algorithms or solutions but to document the progression from brute force solutions to better and better algorithms.
+
+Usage
+=====
+
+Each commit will show progression of some sort, adding a new solution or optimising an existing solution. It's ver interesting to see how the algorithms transform.
+
+Implementations
+===============
 
 There are 4 implementations for each problem:
 
@@ -12,9 +20,9 @@ There are 4 implementations for each problem:
 
 Each implement ISolutions.
 
-The solutions can be run from the test project. There is a test class for each of the 4 implementations.
+The solutions can be ran from the test project. There is a test class for each of the 4 implementations.
 
-Brute Force Solutions
+Brute Force
 =====================
 
 Here are naive and brute force solutions. It is interesting to see how the algorithms change as they are optimised so I have kept the brute force versions here for comparison and learning.
