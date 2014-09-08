@@ -6,7 +6,7 @@ This project attempts to document the algorithm discovery and optimisation phase
 Usage
 =====
 
-Each commit will show progression of some sort, adding a new solution or optimising an existing solution. It's ver interesting to see how the algorithms transform.
+Each commit will show progression of some sort, adding a new solution or optimising an existing solution. It's very interesting to see how the algorithms transform.
 
 Implementations
 ===============
@@ -23,22 +23,22 @@ Each implement ISolutions.
 The solutions can be ran from the test project. There is a test class for each of the 4 implementations.
 
 Brute Force
-=====================
+-----------
 
 Here are naive and brute force solutions. It is interesting to see how the algorithms change as they are optimised so I have kept the brute force versions here for comparison and learning.
 
 Linq
-====
+----
 
 The other solutions cannot leverage Linq. These solutions can use Linq.
 
 Optimised
-=========
+---------
 
 These solutions are optimised. I tried to optimise as well as I could without cheating by getting help from the internet. If I look something up I will document it.
 
 Project Euler
-=============
+-------------
 
 These solutions are a C# implementation of the answers that Project Euler provides once you complete a problem. Used to compare with my own optimised solutions.
 
