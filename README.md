@@ -1,5 +1,5 @@
-Project Euler Solutions
-=======================
+Mathematical Algorithms with Project Euler
+==========================================
 
 This project attempts to document the algorithm discovery and optimisation phases carried out while solving Project Euler mathematical problems programmatically. Its purpose is not to document the best algorithms or solutions but to document the progression from brute force solutions to better and better algorithms.
 
